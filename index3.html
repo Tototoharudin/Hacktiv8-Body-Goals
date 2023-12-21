@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+
+    <marquee behavior="" direction="">
+
+        <h1>HASIL ANDA </h1>
+    </marquee>
+<p id = "result"></p>
+<p id = "kesimpulan"></p>
+<h2>Paket yang cocok untuk anda adalah:</h2>
+<p id = "paket"></p>
+<h3>This will be you in 60 days!</h3>
+<img src = "man1.png" style="width: 400px;">
+<img src = "woman2.jpeg"  style="width: 400px">
+<br>
+<button id = "try-again">TRY THE QUIZ AGAIN</button>
+
+
+<section id="karir" class="border">
+    <h2>KONTAK KAMI : 08212345567</h2>
+    
+    <script>
+        //document.getElementById("result").innerText = localStorage.getItem("count")
+        document.getElementById("kesimpulan").innerText = localStorage.getItem("string")
+    
+        let count = localStorage.getItem("count")
+        //let count = document.getElementById("result").innerText
+        console.log(count, "<<< result of count")
+    
+    let plan = ""
+    
+        if(count<=5){
+        plan = 'We can provide you with "Bronze" gym membershhip and healthy diet'
+        }
+        else if(count>5&&count<=10){
+        plan = 'We can provide you with "Gold" gym membership and healthy diet such as more Vegetable and Protein'
+        }
+        else{
+        plan = 'We can provide you with "Platinum" gym membership and a perfect diet such as less carbo and more Vegetable'
+        }
+        
+        document.addEventListener
+      
+        document.getElementById("paket").innerText = plan
+        
+    
+        var tryAgainButton = document.getElementById('try-again');
+    
+        // Add a click event listener to the button
+        tryAgainButton.addEventListener('click', function() {
+            // Code to execute when the button is clicked
+            //alert("Button clicked! You can add your logic here.");
+            localStorage.clear();
+            window.location.href = 'index2.html';
+    
+    
+        })
+    
+        
+    
+    </script>
+</section>
+
+
+</div>
+    
+</body>
+</html>

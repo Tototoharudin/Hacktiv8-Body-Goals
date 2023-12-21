@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Hacktiv Body Goals</title>
+
+</head>
+<body>
+    
+    <h2>Isi Data Kesehatan & Kebiasaanmu</h2>
+
+    <form id="form-data">
+
+       <label for="kelamin">Kelamin:</label>
+        <select id="kelamin" name="kelamin" required>
+          <option value="laki-laki">Laki-laki</option>
+          <option value="perempuan">Perempuan</option>
+        </select>
+        <br>
+      <label for="height">Tinggi Badan (cm):</label>
+      <input type="text" id="height" name="height" required>
+      <br>
+      <label for="weight">Berat Badan (kg):</label>
+      <input type="number" id="weight" name="weight" required>
+      <br>
+      <label for="bloodPressure">Tensi Darah (mm Hg):</label>
+      <input type="number" id="bloodPressureatas" name="bloodPressureatas" required placeholder="batas tinggi">
+      <input type="number" id="bloodPressurebawah" name="bloodPressurebawah" required placeholder="batas rendah">
+      <br>
+      <label for="bloodSugar">Gula Darah Puasa (mg/dL):</label>
+      <input type="number" id="bloodSugar" name="bloodSugar" required>
+      <br>
+      <label for="exerciseFrequency">Olahraga per Minggu:</label>
+      <select id="exerciseFrequency" name="exerciseFrequency" required>
+        <option value="0">3 kali</option>
+        <option value="1">2 kali</option>
+        <option value="2">1 kali</option>
+        <option value="3">Tidak pernah</option>
+      </select>
+      <br>
+      <label for="smoking">Merokok (batang per hari):</label>
+      <select id="smoking" name="smoking" required>
+        <option value="0">Tidak merokok</option>
+        <option value="1">Kurang dari 20 batang</option>
+        <option value="2">Lebih dari 20 batang</option>
+      </select>
+      <br>
+      <label for="alcohol">Minum Alkohol:</label>
+      <select id="alcohol" name="alcohol" required>
+        <option value="0">Tidak</option>
+        <option value="1">Ya</option>
+      </select>
+      <br>
+      <label for="sleepDuration">Durasi Tidur per Malam:</label>
+      <select id="sleepDuration" name="sleepDuration" required>
+        <option value="0">7 - 9 jam</option>
+        <option value="1">4 - 7 jam</option>
+        <option value="2">Kurang dari 4 jam</option>
+      </select>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+
+
+    <script src="script.js">
+
+    </script>
+</body>
+</html>

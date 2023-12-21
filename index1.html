@@ -1,0 +1,92 @@
+<html lang="en">>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Web | Portofolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <nav>
+          <ul>
+            <li>MASUKAN NAMA DAN USIA</li>
+
+            <form action="">
+
+
+              <li><label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required></li>
+              <li><label for="usia">Usia:</label>
+                <input type="number" id="usia" name="usia" required>
+                </li>
+                
+                <button id="submit" type="submit">submit</button>
+            </form>
+
+          </ul>
+        </nav>
+      </div>
+      <main class="content">
+        <section class="hero">
+          <img src="image.png" alt="" />
+          <div class="hero-content">
+            <H2>SELAMAT DATANG DI</H2>
+            <br>
+            <h1>HACKTIV BODY GOALS</h1>
+            <br />
+            <h3>YOUR BEST CONSULTANT</h3>
+            <br /><br />
+            <p>
+              kami siap menginspirasi dan membimbing Anda <br> dalam perjalanan menuju tubuh yang lebih sehat dan bugar <br>  Visi kami adalah untuk mendorong individu mencapai kesejahteraan <br> optimal melalui olahraga rutin dan pola makan yang penuh perhatian.
+            </p>
+            <div class="action-btn"> </div>
+          </div>
+        </section>
+      </main>
+      <div class="footer">
+        <footer>
+          <ul>
+            <li>
+              <img src="image.png" alt="" /><a><p></p></a>
+                </li>
+                    <li>
+                      <img src="image.png" alt="" /><a><p></p></a>
+                        </li>
+                        
+          </ul>
+        </footer>
+      </div>
+    </div>
+
+
+    <script>
+
+var submitButton = document.getElementById('submit');
+var form = document.querySelector('form');
+
+submitButton.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Validation check for all form fields
+    const formElements = form.elements;
+    let isFormValid = true;
+
+    for (let i = 0; i < formElements.length - 1; i++) {
+        if (formElements[i].type !== "submit" && formElements[i].value === "") {
+            isFormValid = false;
+            alert("Please fill in all fields before submitting.");
+            break;
+        }
+    }
+
+    if (isFormValid) {
+        window.location.href = 'index2.html';
+    }
+});
+
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+/* write your code here */
+            body {
+                font-family: Arial, sans-serif;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+                color: #1ab871;
+                
+            }
+
+            .container {
+                max-width: 500px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .form-group {
+                margin-bottom: 15px;
+            }
+
+            .form-group label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .form-group input {
+                width: 100%;
+                padding: 5px;
+            }
+
+            .form-group button {
+                background-color: #0ea9b1;
+                color: wheat;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                border-radius: 1em;
+            }
+
+            .checkbox {
+                margin-top: 15px;
+            }
+
+            .checkbox label {
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+            .checkbox input {
+                margin-right: 5px;
+            }
